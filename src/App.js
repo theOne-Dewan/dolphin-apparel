@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
 import HomePage from './pages/homepage/homepage.component';
-import { Route, Switch, Redirect } from 'react-router-dom';
 import ShopPage from './pages/shop/shop.component';
-import Header from './components/header/header.component';
 import LoginAndRegisterPage from './pages/login-and-register/login-and-register.component';
+import CheckoutPage from './pages/checkout/checkout.component';
+import Header from './components/header/header.component';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user.actions';
-import { canConstructResponseFromBodyStream } from 'workbox-core/_private';
+import { createStructuredSelector } from  'reselect';
+import { selectCurrentUser } from './redux/user/user.selectors';
 
 class App extends React.Component {
 
@@ -44,6 +46,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path='/' component={HomePage}/>
             <Route path='/shop' component={ShopPage}/>
+            <Route exact path='/checkout' component={CheckoutPage}/>
             <Route exact path='/login' render={() => this.props.currentUser ? (<Redirect to='/'/>) : (<LoginAndRegisterPage/>)}/> 
           </Switch>
       </div>
@@ -51,8 +54,8 @@ class App extends React.Component {
   }
 }
 
-const mapStateTopProps = ({user}) => ({
-  currentUser: user.currentUser
+const mapStateTopProps = createStructuredSelector({
+  currentUser: selectCurrentUser
 });
 
 const mapDispatchToProps = dispatch => ({

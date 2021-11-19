@@ -12,6 +12,12 @@
     margin-right: 66px;
     z-index: 5;
 
+    .empty-message{
+        font-size: 18px;
+        margin: 100px auto;
+        color: rgb(95, 95, 95);
+    }
+
     .cart-items{
         height: 300px;
         display: flex;
