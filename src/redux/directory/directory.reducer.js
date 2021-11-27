@@ -20,15 +20,15 @@ const INITIAL_STATE = {
         },
         {
             id: 4,
-            title: 'womens',
-            linkUrl: 'shop/womens',
+            title: 'women',
+            linkUrl: 'shop/women',
             imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
             imageSize: 'large'
         },
         {
             id: 5,
-            title: 'mens',
-            linkUrl: 'shop/mens',
+            title: 'men',
+            linkUrl: 'shop/men',
             imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
             imageSize: 'large'
         }
