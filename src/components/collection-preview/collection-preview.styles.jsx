@@ -8,7 +8,8 @@ export const CollectionPreviewContainer = styled.div`
 `;
 
 export const TitleLink = styled(Link)`
-    font-size: 20px;
+    font-weight: bolder;
+    font-size: 25px;
     margin-bottom: 25px;
 `;
 
