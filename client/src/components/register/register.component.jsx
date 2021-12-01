@@ -13,14 +13,16 @@ const Register = ({signUpStart}) => {
         confirmPassword: ''
     });
 
+    const [passwordError, setPasswordError] = useState(false);
+
     const {displayName, email, password, confirmPassword} = userCredentials;
 
     const handleSubmit = async event => {
         event.preventDefault();
         
         if(password !== confirmPassword){
-            alert("The Password does not match the Confirm Password. Please retry.");
-            return;
+            setPasswordError(true);
+            setTimeout(() => {setPasswordError(false)}, 7000);
         };
 
         signUpStart({email, password, displayName});
@@ -40,7 +42,9 @@ const Register = ({signUpStart}) => {
                 <FormInput type='email' name='email' value={email} onChange={handleChange} label='Email' required />
                 <FormInput type='password' name='password' value={password} onChange={handleChange} label='Password' required />
                 <FormInput type='password' name='confirmPassword' value={confirmPassword} onChange={handleChange} label='Confirm Password' required /> 
-
+                {
+                passwordError ? <span className="error">The Password does not match the Password Confirmation. Please try again.</span> : null
+                }
                 <CustomButton type='submit'>REGISTER</CustomButton>
             </form>
         </div>

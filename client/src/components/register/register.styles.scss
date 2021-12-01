@@ -1,0 +1,17 @@
+.register{
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+
+    .title{
+        margin: 10px 0;
+    }
+
+    .register-form{
+        .error{
+            display: block;
+            color: red;
+            margin-bottom: 20px;
+        }
+    }
+}
