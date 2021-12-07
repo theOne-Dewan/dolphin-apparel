@@ -40,4 +40,35 @@
       margin-left: auto;
       margin-top: 30px;
     }
+
+    @media screen and (max-width: 800px){
+    width: 90vw;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto 0;
+  
+    .checkout-header{
+      display: none;
+    }
+  
+    .total{
+      margin: 0 auto;
+      margin-top: 30px;
+      font-size: 25px;
+    }
+
+    .test-warning{
+      font-size: 16px;
+      text-align: center;
+      margin-top: 30px;
+      color: red;
+    }
+
+    button{
+      margin: 0 auto;
+      margin: 20px 0;
+    }
+  }
   }

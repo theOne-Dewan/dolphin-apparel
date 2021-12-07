@@ -45,7 +45,9 @@ const Register = ({signUpStart}) => {
                 {
                 passwordError ? <span className="error">The Password does not match the Password Confirmation. Please try again.</span> : null
                 }
-                <CustomButton type='submit'>REGISTER</CustomButton>
+                <div className='buttons'>
+                    <CustomButton type='submit'>REGISTER</CustomButton>
+                </div>
             </form>
         </div>
     )

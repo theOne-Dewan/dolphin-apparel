@@ -22,7 +22,7 @@ const Login = ({emailSignInStart, googleSignInStart}) => {
 
     return(
         <div className='login'>
-            <h2>Already a member?</h2>
+            <h2 className='title'>Already a member?</h2>
             <span>Please log in with your email and password</span>
 
             <form onSubmit={handleSubmit}>
