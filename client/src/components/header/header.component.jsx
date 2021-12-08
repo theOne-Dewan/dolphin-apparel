@@ -18,7 +18,7 @@ const Header = ({currentUser, hidden, signOutStart, hideCart}) => (
             <OptionLink to='/shop'>
                 SHOP
             </OptionLink>
-            <OptionLink to='/shop'>
+            <OptionLink to='/contact'>
                 CONTACT
             </OptionLink>
             {currentUser? (

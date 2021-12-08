@@ -12,6 +12,7 @@ const HomePage = lazy(() => import('./pages/homepage/homepage.component'));
 const ShopPage = lazy(() => import('./pages/shop/shop.component'));
 const LoginAndRegisterPage = lazy(() => import('./pages/login-and-register/login-and-register.component'));
 const CheckoutPage = lazy(() => import('./pages/checkout/checkout.component'));
+const ContactPage = lazy(() => import('./pages/contact/contact.component'));
 
 const App = () => {
   const currentUser = useSelector(selectCurrentUser);
@@ -30,6 +31,7 @@ const App = () => {
             <Suspense fallback={<Spinner/>}>
               <Route exact path='/' component={HomePage}/>
               <Route path='/shop' component={ShopPage}/>
+              <Route exact path='/contact' component={ContactPage}/>
               <Route exact path='/checkout' component={CheckoutPage}/>
               <Route exact path='/login' render={() => currentUser ? (<Redirect to='/'/>) : (<LoginAndRegisterPage/>)}/> 
             </Suspense>
