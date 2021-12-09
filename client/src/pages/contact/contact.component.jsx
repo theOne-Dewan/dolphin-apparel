@@ -6,9 +6,9 @@ const ContactPage = () => (
         <ContactImage/>
         <ContactInfo>
             <h1>CONTACT INFO</h1>
-             <span>Portfolio Website: </span>
-             <span>LinkedIn: </span>
-             <span>[Email-InputBox Placeholder]</span>
+            <span>Portfolio Website: </span>
+            <span>LinkedIn: </span>
+            <span>[Email-InputBox Placeholder]</span>
         </ContactInfo>
     </ContactPageContainer>
 );

@@ -32,9 +32,12 @@ export const ContactInfo = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 
     @media screen and (max-width: 800px){
         width: 90vw;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 `;

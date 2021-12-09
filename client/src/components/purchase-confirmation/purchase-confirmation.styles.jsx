@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ConfirmationContainer = styled.div`
-    width: 55vw;
+    width: 65vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,5 +13,6 @@ export const ConfirmationContainer = styled.div`
     @media screen and (max-width: 800px){
         width: 90vw;
         margin: 100px auto;
+        font-size: smaller;
     }
 `;
