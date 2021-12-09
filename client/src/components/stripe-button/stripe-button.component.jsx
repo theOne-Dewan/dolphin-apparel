@@ -17,8 +17,7 @@ const StripeCheckoutButton = ({price, clearCart, history}) => {
                 token
             }
         }).then(response => {
-            alert('Payment Successful');
-            history.push('/');
+            history.push('/confirmation');
         }).catch(error => {
             console.log('Payment error: ', JSON.parse(error));
             alert('There was an issue with your payment. Please use the provided Test credit card');

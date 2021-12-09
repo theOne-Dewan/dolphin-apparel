@@ -13,6 +13,7 @@ const ShopPage = lazy(() => import('./pages/shop/shop.component'));
 const LoginAndRegisterPage = lazy(() => import('./pages/login-and-register/login-and-register.component'));
 const CheckoutPage = lazy(() => import('./pages/checkout/checkout.component'));
 const ContactPage = lazy(() => import('./pages/contact/contact.component'));
+const PurchaseConfirmation = lazy(() => import('./components/purchase-confirmation/purchase-confirmation.component'));
 
 const App = () => {
   const currentUser = useSelector(selectCurrentUser);
@@ -33,6 +34,7 @@ const App = () => {
               <Route path='/shop' component={ShopPage}/>
               <Route exact path='/contact' component={ContactPage}/>
               <Route exact path='/checkout' component={CheckoutPage}/>
+              <Route exact path='/confirmation' component={PurchaseConfirmation}/>
               <Route exact path='/login' render={() => currentUser ? (<Redirect to='/'/>) : (<LoginAndRegisterPage/>)}/> 
             </Suspense>
           </ErrorBoundary>
