@@ -21,6 +21,6 @@ This responsive web app implements Firebase to allow the user to create an accou
 * Most of the information about the items, images and price is also stored on the firebase database is and accessed as the pages mount. 
 * Users can keep adding and removing items, which is displayed both on the shopping cart and the cart page. This is possible because of state management via Redux-Sagas.
 * The user is able to make payments thanks to the help of the Stripe integration. There is a client and server directory for the app; functions for stripe to handle the payments are in the server.
-* There is a Spinner comoment that shows until the pages recive data from firebase asynchronously.
+* There is a Spinner component that shows until the pages receive data from firebase asynchronously.
 * It is fully responsive and adapts to mobile phones.
 * It is PWA compliant(uses https, service workers and has a modified manifest file) and can somewhat run even without internet.
