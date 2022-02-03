@@ -12,6 +12,7 @@ This responsive web app implements Firebase to allow the user to create an accou
 * Sass
 * Firebase
 * Stripe
+* Heroku
 
 ## Key Features
 
