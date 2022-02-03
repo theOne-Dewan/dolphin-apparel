@@ -1,6 +1,3 @@
-.email-box-container{
-    
-}
 
 .email-box-desc{
     font-size: 1.3rem;
@@ -9,4 +6,17 @@
 
 .email-box-desc span{
     font-weight: 600;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 800px){
+    .email-box-container{
+        width: 90vw;
+        text-align: center;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
 }

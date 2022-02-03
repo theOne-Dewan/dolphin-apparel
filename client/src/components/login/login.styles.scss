@@ -5,11 +5,18 @@
 
     .title{
         margin: 10px 0;
+        font-weight: 600;
+        font-size: 1.5rem;
     }
 
     .buttons{
         display: flex;
         justify-content: space-between;
+    }
+
+    .prompt{
+        font-size: 1.3rem;
+        font-weight: 300;
     }
 
     @media screen and (max-width: 800px){

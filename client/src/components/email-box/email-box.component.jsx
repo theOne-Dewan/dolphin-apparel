@@ -33,7 +33,9 @@ const ContactBox = ({history}) => {
             <FormInput type='email' name='email' value={email} onChange={handleChange} label='Email' required />
             <FormInput type='text' name='subject' value={subject} onChange={handleChange} label='Subject' required />
             <FormInput type='textarea' name='message' value={message} onChange={handleChange} label='Message' required />
-            <CustomButton>Submit</CustomButton>
+            <div className='buttons'>
+              <CustomButton>Submit</CustomButton>
+            </div>
           </form>
       </div>
   );

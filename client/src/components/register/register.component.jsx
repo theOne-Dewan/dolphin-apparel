@@ -36,7 +36,7 @@ const Register = ({signUpStart}) => {
     return(
         <div className='register'>
             <h2 className='title'>Not a member?</h2>
-            <span>Please register as a new member</span>
+            <span className='prompt'>Please register as a new member</span>
             <form className='register-form' onSubmit={handleSubmit}>
                 <FormInput type='text' name='displayName' value={displayName} onChange={handleChange} label='Display Name' required />
                 <FormInput type='email' name='email' value={email} onChange={handleChange} label='Email' required />

@@ -23,7 +23,7 @@ const Login = ({emailSignInStart, googleSignInStart}) => {
     return(
         <div className='login'>
             <h2 className='title'>Already a member?</h2>
-            <span>Please log in with your email and password</span>
+            <span className='prompt'>Please log in with your email and password</span>
 
             <form onSubmit={handleSubmit}>
                 <FormInput type='email'  name='email' label='Email' value={email} handleChange={handleChange} required/>

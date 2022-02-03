@@ -24,6 +24,7 @@ export const ContactImage = styled(Image)`
         width: 90vw;
         text-align: center;
         height: 40vh;
+        display: none;
     }
 `;
 
@@ -39,5 +40,6 @@ export const ContactInfo = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 25px
     }
 `;
