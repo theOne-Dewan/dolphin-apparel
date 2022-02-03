@@ -1,14 +1,12 @@
 import React from 'react';
 import { ContactPageContainer, ContactImage, ContactInfo } from './contact.styles';
+import ContactBox from '../../components/email-box/email-box.component';
 
-const ContactPage = () => (
+const ContactPage = ({history}) => (
     <ContactPageContainer>
         <ContactImage/>
         <ContactInfo>
-            <h1>CONTACT INFO</h1>
-            <span>Portfolio Website: </span>
-            <span>LinkedIn: </span>
-            <span>[Email-InputBox Placeholder]</span>
+            <ContactBox history={history}/>
         </ContactInfo>
     </ContactPageContainer>
 );
