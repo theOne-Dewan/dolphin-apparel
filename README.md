@@ -23,4 +23,4 @@ This responsive web app implements Firebase to allow the user to create an accou
 * The user is able to make payments thanks to the help of the Stripe integration. There is a client and server directory for the app; functions for stripe to handle the payments are in the server.
 * There is a Spinner comoment that shows until the pages recive data from firebase asynchronously.
 * It is fully responsive and adapts to mobile phones.
-* It is PWA compliant(uses https, service workers and has a modified manifest file) and can somewhat run even without internet.
+* It is PWA compliant(uses https, service workers and has a modified manifest file) and can somewhat run even without internet. 
