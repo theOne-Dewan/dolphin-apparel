@@ -11,7 +11,7 @@
 
     .buttons{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
 
     .prompt{
@@ -24,9 +24,5 @@
         text-align: center;
         margin-bottom: 30px;
 
-        .buttons{
-            display: flex;
-            flex-direction: column;
-        }
     }
 }

@@ -20,12 +20,12 @@ const Register = ({signUpStart}) => {
     const handleSubmit = async event => {
         event.preventDefault();
         
-        if(password !== confirmPassword){
+        if (password !== confirmPassword){
             setPasswordError(true);
             setTimeout(() => {setPasswordError(false)}, 7000);
-        };
-
-        signUpStart({email, password, displayName});
+        } else {
+            signUpStart({email, password, displayName});
+        }
     };
 
     const handleChange = event => {
@@ -45,9 +45,7 @@ const Register = ({signUpStart}) => {
                 {
                 passwordError ? <span className="error">The Password does not match the Password Confirmation. Please try again.</span> : null
                 }
-                <div className='buttons'>
-                    <CustomButton type='submit'>REGISTER</CustomButton>
-                </div>
+                <CustomButton type='submit'>REGISTER</CustomButton>
             </form>
         </div>
     )
