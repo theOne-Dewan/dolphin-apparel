@@ -24,3 +24,7 @@ This responsive web app implements Firebase to allow the user to create an accou
 * There is a Spinner component that shows until the pages receive data from firebase asynchronously.
 * It is fully responsive and adapts to mobile phones.
 * It is PWA compliant(uses https, service workers and has a modified manifest file) and can somewhat run even without internet.
+
+## Key Features
+
+https://youtu.be/LLQvn8YPpwQ
