@@ -25,6 +25,6 @@ This responsive web app implements Firebase to allow the user to create an accou
 * It is fully responsive and adapts to mobile phones.
 * It is PWA compliant(uses https, service workers and has a modified manifest file) and can somewhat run even without internet.
 
-## Key Features
+## Demo Video
 
 https://youtu.be/LLQvn8YPpwQ
