@@ -3,4 +3,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 80vh;
+}
+
+@media screen and (max-width: 800px){
+    .directory-menu{
+        height: revert;
+    }
 }

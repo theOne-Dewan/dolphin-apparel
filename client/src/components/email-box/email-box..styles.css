@@ -14,9 +14,4 @@
         width: 90vw;
         text-align: center;
     }
-
-    .buttons{
-        display: flex;
-        flex-direction: column;
-    }
 }
