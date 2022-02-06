@@ -28,3 +28,7 @@ This responsive web app implements Firebase to allow the user to create an accou
 ## Demo Video
 
 https://youtu.be/LLQvn8YPpwQ
+
+## Google Lighthouse Score
+
+![PWA Compliant Fin Apparel](https://user-images.githubusercontent.com/93229049/152699510-6c33f6b5-4d84-4f19-baea-f293f6ef9ccc.PNG)
